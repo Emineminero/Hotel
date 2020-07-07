@@ -9,7 +9,7 @@ usersCtrl.getUsers = async (req,res) => {
 };
 usersCtrl.createUser = async (req,res) => {
     try{
-        await saveUserToDB(req.body,res);
+        await this.saveUserToDB(req.body,res);
     }catch(e){
         console.log("Fallo al crear usuario",e);
         res.json(e.detail);
