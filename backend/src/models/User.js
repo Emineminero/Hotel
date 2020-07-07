@@ -1,4 +1,4 @@
-bcrypt = require('bcryptjs');
+const bcrypt = require('bcryptjs');
 
 const userObj = {};
     userObj.setFields = (details) =>{
